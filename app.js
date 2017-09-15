@@ -46,6 +46,10 @@ $("#play").on("click", () => {
   makeRequest("http://10.6.67.80:3000/", pattern);
 });
 
+$("#stop").on("click", () => {
+  makeRequest("http://10.6.67.80:3000/stop", {});
+})
+
 //right arrow, right snare
 document.addEventListener('keydown', function(e) {
   var key = e.which || e.key;
