@@ -3,7 +3,7 @@
 }
 
 #labels {
-  border-right: black solid 1px;
+  /*border-right: black solid 1px;*/
   padding-right: 2%;
 }
 
@@ -54,4 +54,16 @@
 
 .drumLabel {
   margin: 26%
+}
+
+#app>button {
+  padding-left: 2%;
+  padding-right: 2%;
+  margin: 1%
+}
+
+#sequencer {
+  border: black solid 1px;
+  border-top: none;
+  border-bottom: none;
 }
