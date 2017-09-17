@@ -22,6 +22,9 @@ function makeRequest(url, data) {
 
 $("#play").on("click", () => {
 
+  console.log("here");
+  $("#circle").addClass("on");
+
   let right = $(".r");
   let left = $(".l");
   let bass = $(".b");
@@ -49,6 +52,7 @@ $("#play").on("click", () => {
 });
 
 $("#stop").on("click", () => {
+  $("#circle").removeClass("on")
   makeRequest("http://10.6.67.80:3000/stop", {});
 })
 
