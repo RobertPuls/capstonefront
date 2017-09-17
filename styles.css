@@ -45,13 +45,11 @@
       border: #e9ecef solid;
       border: #e9ecef outset;
       border-radius: 5px;
-      background-color: #3b3946;
-      background-color: #6b687b;
       background-image: url("http://heelanhammer.com/wp-content/uploads/2015/12/Grey-Background.jpg.png");
       background-image: url("http://chesterspirit.com/wp-content/uploads/2016/02/Plain-Grey-Background.jpg");
       background-image: url("http://www.picz.ge/img/s2/1211/11/5/5fff760298e7.jpg");
       background-image: url("http://img01.deviantart.net/dacd/i/2011/293/3/6/not_so_royal_wallpaper_by_greasybacon-d4dek7a.png");
-      background-size: auto;
+      background-position-x: -600px;
       display: flex;
       flex-wrap: nowrap;
     }
@@ -178,6 +176,9 @@
     }
 
     .head {
+      margin-bottom: 1%;
+      border: #e9ecef solid;
+      border-radius: 5px;
       background-image: url("https://i.imgur.com/6wPjCFT.jpg");
       background-size: cover;
       align-items: center;
@@ -194,4 +195,25 @@
 
     .head>ul>li {
       padding-left: 6%;
+    }
+
+    .screwsLeft {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      left: 15px;
+    }
+
+    .screwsRight {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      right: 15px;
+    }
+
+    .screw {
+      margin-bottom: 30px;
+      margin-top: 30px;
+      width: 30px;
+      height: 30px;
     }
