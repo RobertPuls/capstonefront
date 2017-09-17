@@ -10,66 +10,70 @@
   <body>
     <article id="app">
       <section id="labels">
-        <div>Snare</div>
-        <div>Bass</div>
-        <div>Hihat</div>
+        <p class="label">Hihat</p>
+        <p class="label">Snare</p>
+        <p class="label">Bass</p>
       </section>
       <section id="sequencer">
-        <div id="snare">
-          <input type="checkbox" class="r">
-          <input type="checkbox" class="l">
-          <input type="checkbox" class="r">
-          <input type="checkbox" class="l">
-          <input type="checkbox" class="r">
-          <input type="checkbox" class="l">
-          <input type="checkbox" class="r">
-          <input type="checkbox" class="l">
-          <input type="checkbox" class="r">
-          <input type="checkbox" class="l">
-          <input type="checkbox" class="r">
-          <input type="checkbox" class="l">
-          <input type="checkbox" class="r">
-          <input type="checkbox" class="l">
-          <input type="checkbox" class="r">
-          <input type="checkbox" class="l">
+        <div id="hihat" class="test">
+          <div class="box"><input type="checkbox" class="hh"></div>
+          <div class="box"><input type="checkbox" class="hh"></div>
+          <div class="box"><input type="checkbox" class="hh"></div>
+          <div class="box"><input type="checkbox" class="hh"></div>
+          <div class="box"><input type="checkbox" class="hh"></div>
+          <div class="box"><input type="checkbox" class="hh"></div>
+          <div class="box"><input type="checkbox" class="hh"></div>
+          <div class="box"><input type="checkbox" class="hh"></div>
+          <div class="box"><input type="checkbox" class="hh"></div>
+          <div class="box"><input type="checkbox" class="hh"></div>
+          <div class="box"><input type="checkbox" class="hh"></div>
+          <div class="box"><input type="checkbox" class="hh"></div>
+          <div class="box"><input type="checkbox" class="hh"></div>
+          <div class="box"><input type="checkbox" class="hh"></div>
+          <div class="box"><input type="checkbox" class="hh"></div>
+          <div class="box"><input type="checkbox" class="hh"></div>
         </div>
-        <div id="bass">
-          <input type="checkbox" class="b">
-          <input type="checkbox" class="b">
-          <input type="checkbox" class="b">
-          <input type="checkbox" class="b">
-          <input type="checkbox" class="b">
-          <input type="checkbox" class="b">
-          <input type="checkbox" class="b">
-          <input type="checkbox" class="b">
-          <input type="checkbox" class="b">
-          <input type="checkbox" class="b">
-          <input type="checkbox" class="b">
-          <input type="checkbox" class="b">
-          <input type="checkbox" class="b">
-          <input type="checkbox" class="b">
-          <input type="checkbox" class="b">
-          <input type="checkbox" class="b">
+        <div id="snare" class="test">
+          <div class="box"><input type="checkbox" class="r"></div>
+          <div class="box"><input type="checkbox" class="l"></div>
+          <div class="box"><input type="checkbox" class="r"></div>
+          <div class="box"><input type="checkbox" class="l"></div>
+          <div class="box"><input type="checkbox" class="r"></div>
+          <div class="box"><input type="checkbox" class="l"></div>
+          <div class="box"><input type="checkbox" class="r"></div>
+          <div class="box"><input type="checkbox" class="l"></div>
+          <div class="box"><input type="checkbox" class="r"></div>
+          <div class="box"><input type="checkbox" class="l"></div>
+          <div class="box"><input type="checkbox" class="r"></div>
+          <div class="box"><input type="checkbox" class="l"></div>
+          <div class="box"><input type="checkbox" class="r"></div>
+          <div class="box"><input type="checkbox" class="l"></div>
+          <div class="box"><input type="checkbox" class="r"></div>
+          <div class="box"><input type="checkbox" class="l"></div>
         </div>
-        <div id="hihat">
-          <input type="checkbox" class="hh">
-          <input type="checkbox" class="hh">
-          <input type="checkbox" class="hh">
-          <input type="checkbox" class="hh">
-          <input type="checkbox" class="hh">
-          <input type="checkbox" class="hh">
-          <input type="checkbox" class="hh">
-          <input type="checkbox" class="hh">
-          <input type="checkbox" class="hh">
-          <input type="checkbox" class="hh">
-          <input type="checkbox" class="hh">
-          <input type="checkbox" class="hh">
-          <input type="checkbox" class="hh">
-          <input type="checkbox" class="hh">
-          <input type="checkbox" class="hh">
-          <input type="checkbox" class="hh">
+        <div id="bass" class="test">
+          <div class="box"><input type="checkbox" class="b"></div>
+          <div class="box"><input type="checkbox" class="b"></div>
+          <div class="box"><input type="checkbox" class="b"></div>
+          <div class="box"><input type="checkbox" class="b"></div>
+          <div class="box"><input type="checkbox" class="b"></div>
+          <div class="box"><input type="checkbox" class="b"></div>
+          <div class="box"><input type="checkbox" class="b"></div>
+          <div class="box"><input type="checkbox" class="b"></div>
+          <div class="box"><input type="checkbox" class="b"></div>
+          <div class="box"><input type="checkbox" class="b"></div>
+          <div class="box"><input type="checkbox" class="b"></div>
+          <div class="box"><input type="checkbox" class="b"></div>
+          <div class="box"><input type="checkbox" class="b"></div>
+          <div class="box"><input type="checkbox" class="b"></div>
+          <div class="box"><input type="checkbox" class="b"></div>
+          <div class="box"><input type="checkbox" class="b"></div>
         </div>
       </section>
+      <div class="bpm">
+        <label for="bpm">BPM</label>
+        <input type="text" class="bpm" name="bpm" value="70">
+      </div>
       <button type="button" id="play" name="button">Play</button>
       <button type="button" id="stop" name="button">Stop</button>
     </article>

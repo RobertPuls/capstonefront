@@ -27,9 +27,11 @@ $("#play").on("click", () => {
   let bass = $(".b");
   let hihat = $(".hh");
 
-  for (var i = 0; i < right.length; i++) {
-    right[i] = right[i].checked;
-    left[i] = left[i].checked;
+  for (let i = 0; i < bass.length; i++) {
+    if (i % 2 === 0) {
+      right[i / 2] = right[i / 2].checked;
+      left[i / 2] = left[i / 2].checked;
+    }
     bass[i] = bass[i].checked;
     hihat[i] = hihat[i].checked;
   }
@@ -64,6 +66,23 @@ document.addEventListener('keydown', function(e) {
   var key = e.which || e.key;
   console.log(key);
   if (key === 37) {
-    makeRequest("http://10.6.67.80:3000/right", {});
+    makeRequest("http://10.6.67.80:3000/left", {});
   }
 });
+
+// $(".box").toggle(
+//   function() {
+//     $(this).addClass(".checked");
+//   },
+//   function() {
+//     $(this).removeClass(".checked");
+//   }
+// );
+
+$(".box").on("click", function() {
+  if ($(this).hasClass("checked")) {
+    $(this).removeClass("checked");
+  } else {
+    $(this).addClass("checked");
+  }
+})

@@ -3,49 +3,11 @@
 }
 
 #labels {
+  font-size: 20px;
+  font-family: monospace;
   /*border-right: black solid 1px;*/
   padding-right: 2%;
-}
-
-.checkboxFive {
-  display: inline;
-  width: 25px;
-  margin: 1.5%;
-  position: relative;
-}
-
-.checkboxFive label {
-  cursor: pointer;
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  top: 0;
-  left: 0;
-  background: #eee;
-  border: 1px solid #ddd;
-}
-
-.checkboxFive label:after {
-  opacity: 0;
-  content: '';
-  position: absolute;
-  width: 9px;
-  height: 5px;
-  background: transparent;
-  top: 6px;
-  left: 7px;
-  border: 3px solid #333;
-  border-top: none;
-  border-right: none;
-  transform: rotate(-45deg);
-}
-
-.checkboxFive label:hover::after {
-  opacity: 0.5;
-}
-
-.checkboxFive input[type=checkbox]:checked+label:after {
-  opacity: 1;
+  /*margin-top: -1.2%;*/
 }
 
 .drum {
@@ -63,7 +25,51 @@
 }
 
 #sequencer {
+  padding: 1%;
   border: black solid 1px;
   border-top: none;
   border-bottom: none;
+}
+
+input {
+  margin: auto;
+  width: inherit;
+  height: inherit;
+  opacity: 0;
+}
+
+.box {
+  padding-top: 20px;
+  display: inline;
+  width: 40px;
+  height: 40px;
+  background: #eee;
+  margin: -1.5px;
+}
+
+#snare>.checked {
+  background: red;
+}
+
+#bass>.checked {
+  background: blue;
+}
+
+#hihat>.checked {
+  background: yellow;
+}
+
+.test {
+  margin-top: -3px;
+  margin-bottom: -3px;
+}
+
+.bpm {
+  font-family: monospace;
+  width: 120px;
+  text-align: center;
+  margin-left: 1%;
+  margin-right: 1%;
+  font-size: 40px;
+  opacity: 1;
 }
