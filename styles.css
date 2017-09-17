@@ -1,10 +1,18 @@
+* {
+  font-family: monospace;
+}
+
 #app {
   display: flex;
 }
 
+#control {
+  justify-content: center;
+  display: flex;
+}
+
 #labels {
-  font-size: 20px;
-  font-family: monospace;
+  font-size: 29.5px;
   /*border-right: black solid 1px;*/
   padding-right: 2%;
   /*margin-top: -1.2%;*/
@@ -18,10 +26,13 @@
   margin: 26%
 }
 
-#app>button {
-  padding-left: 2%;
-  padding-right: 2%;
-  margin: 1%
+#control>button {
+  height: max-content;
+  padding: 2%;
+  font-size: 30px;
+  /*margin: 1%*/
+  margin-left: 1%;
+  margin-top: 2.4%;
 }
 
 #sequencer {
@@ -39,10 +50,10 @@ input {
 }
 
 .box {
-  padding-top: 20px;
+  padding-top: 45px;
   display: inline;
-  width: 40px;
-  height: 40px;
+  width: 65px;
+  height: 65px;
   background: #eee;
   margin: -1.5px;
 }
