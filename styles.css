@@ -1,9 +1,62 @@
 * {
-  font-family: monospace;
+  /*color: #FCFBE3;*/
+  font-family: "BadMofo", monospace;
+  /*font-family: "Letters";
+  font-family: "Letters II";
+  font-family: "60s pop"*/
 }
 
+body {
+  background-image: url("http://365daysofahappyhome.com/wp-content/uploads/2014/09/5906-Zebrano-Woodgrain-Gloss.jpg");
+  /*background-image: url("https://filtergrade.com/wp-content/uploads/2015/10/2.jpg");*/
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/*@font-face {
+  font-family: BadMofo;
+  src: local("Bad Mofo") local("Bad-Mofo"), url(BadMofo.ttf);
+}*/
+
+@font-face {
+  font-family: digital;
+  src: local("DS DIGI") local("DS-DIGI"), url(DS-DIGI.ttf);
+}
+
+
+/*@font-face {
+  font-family: disco-3;
+  src: local("disco 3") local("disco-3"), url(disco-3.ttf);
+}
+
+@font-face {
+  font-family: "60s-pop";
+  src: local("60s pop") local("60s-pop"), url(60s-pop.ttf);
+}
+
+@font-face {
+  font-family: letters;
+  src: local("letters"), url(letters.ttf);
+}
+
+@font-face {
+  font-family: letters-2;
+  src: local("letters II") local("letters-II"), url(letters.ii-fenotype.ttf);
+}*/
+
 #app {
+  border: #e9ecef solid;
+  border: #e9ecef outset;
+  border-radius: 5px;
+  background-color: #3b3946;
+  background-color: #6b687b;
+  background-image: url("http://heelanhammer.com/wp-content/uploads/2015/12/Grey-Background.jpg.png");
+  background-image: url("http://chesterspirit.com/wp-content/uploads/2016/02/Plain-Grey-Background.jpg");
+  background-image: url("http://www.picz.ge/img/s2/1211/11/5/5fff760298e7.jpg");
+  background-size: contain;
   display: flex;
+  flex-wrap: nowrap;
 }
 
 #control {
@@ -12,7 +65,10 @@
 }
 
 #labels {
-  font-size: 29.5px;
+  /*background-image: url("http://images.all-free-download.com/images/graphiclarge/metal_background_of_highdefinition_picture_2_169714.jpg");*/
+  padding-left: 2%;
+  font-size: 40px;
+  line-height: 50%;
   /*border-right: black solid 1px;*/
   padding-right: 2%;
   /*margin-top: -1.2%;*/
@@ -26,27 +82,33 @@
   margin: 26%
 }
 
-#control>button {
+button {
+  background-image: url("http://images.all-free-download.com/images/graphiclarge/metal_background_of_highdefinition_picture_2_169714.jpg");
+  box-shadow: 3.5px 3.5px 7px rgba(0, 0, 0, 0.8);
   height: max-content;
   padding: 2%;
   font-size: 30px;
-  /*margin: 1%*/
+  border: #e9ecef solid 2px;
+  border: #e9ecef outset 3px;
+  border-radius: 5px;
   margin-left: 1%;
   margin-top: 2.4%;
 }
 
 #sequencer {
   padding: 1%;
-  border: black solid 1px;
-  border-top: none;
-  border-bottom: none;
+  border-left: #e9ecef solid;
 }
 
 input {
+  color: green;
+  font-family: "DS-Digital", monospace;
   margin: auto;
   width: inherit;
   height: inherit;
   opacity: 0;
+  color: white;
+  background: black;
 }
 
 .box {
@@ -54,20 +116,24 @@ input {
   display: inline;
   width: 65px;
   height: 65px;
-  background: #eee;
+  background: radial-gradient(#eee, #d0d0d0);
   margin: -1.5px;
+  border: black solid 1px;
+  border: grey outset 1px;
+  /*box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);*/
+  border-radius: 3px;
 }
 
 #snare>.checked {
-  background: red;
+  background: radial-gradient(#ff8484, red);
 }
 
 #bass>.checked {
-  background: blue;
+  background: radial-gradient(#8181ff, blue);
 }
 
 #hihat>.checked {
-  background: yellow;
+  background: radial-gradient(#ffffb1, yellow);
 }
 
 .test {
@@ -76,11 +142,22 @@ input {
 }
 
 .bpm {
-  font-family: monospace;
+  margin-right: 1%;
   width: 120px;
   text-align: center;
-  margin-left: 1%;
-  margin-right: 1%;
+  margin-top: -0.7%;
   font-size: 40px;
   opacity: 1;
+}
+
+.bpm>p {
+  width: 117px;
+  padding-left: 2%;
+  padding-right: 2%;
+  margin-bottom: 5%;
+  background-image: url("http://images.all-free-download.com/images/graphiclarge/metal_background_of_highdefinition_picture_2_169714.jpg");
+  border: #e9ecef solid 2px;
+  border: #e9ecef outset 3px;
+  box-shadow: 3.5px 3.5px 7px rgba(0, 0, 0, 0.8);
+  border-radius: 4px;
 }
